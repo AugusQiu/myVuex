@@ -1,8 +1,10 @@
 const path  = require('path')
 const { VueLoaderPlugin } = require('vue-loader')
+const htmlWebpackPlugin   = require('html-webpack-plugin');
+
 
 module.exports = {
-    devtool:'source-map',
+    devtool:'eval-source-map',
     entry:'./main.js',  //入口
     output:{
        filename:'bundle.js',
@@ -17,6 +19,10 @@ module.exports = {
       ]
     },
     plugins: [
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(),
+        new htmlWebpackPlugin({
+          filename:'index.html',
+          template:'index.html'
+        })
     ]
 }
