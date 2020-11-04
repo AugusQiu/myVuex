@@ -5,7 +5,7 @@ const htmlWebpackPlugin   = require('html-webpack-plugin');
 
 module.exports = {
     devtool:'eval-source-map',
-    entry:'./main.js',  //入口
+    entry:'./src/main.js',  //入口
     output:{
        filename:'bundle.js',
        path:path.resolve(__dirname,'dist')
