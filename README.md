@@ -17,4 +17,6 @@ npm i babel-core babel-loader babel-preset-env -D
 npm i html-webpack-plugin -D
 ````
 # myVuex
-手写一个简单的vuex
+````
+npm run dev
+````
